@@ -14,8 +14,8 @@ export default function App() {
   const [dailyLogs, setDailyLogs] = useState([]);
   const [chartLimit, setChartLimit] = useState(20);
   const [systemStatus, setSystemStatus] = useState({
-    data_source: 'Simulator',
-    mqtt_host: '192.168.24.251',
+    data_source: 'MQTT',
+    mqtt_host: 'broker.hivemq.com',
     mqtt_port: 1883,
     mqtt_topic: 'iot/sensor',
     mqtt_connected: false
@@ -70,7 +70,7 @@ export default function App() {
 
   // Settings form states
   const [sourceForm, setSourceForm] = useState('MQTT');
-  const [hostForm, setHostForm] = useState('192.168.24.251');
+  const [hostForm, setHostForm] = useState('broker.hivemq.com');
   const [portForm, setPortForm] = useState(1883);
   const [topicForm, setTopicForm] = useState('iot/sensor');
 

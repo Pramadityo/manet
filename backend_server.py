@@ -23,7 +23,7 @@ app.add_middleware(
 DB_FILE = "maggot_monitoring.db"
 SYSTEM_STATE = {
     "data_source": "MQTT", # Default to physical MQTT sensor module
-    "mqtt_host": "192.168.24.251",
+    "mqtt_host": "broker.hivemq.com",
     "mqtt_port": 1883,
     "mqtt_topic": "iot/sensor",
     "mqtt_connected": False
